@@ -6,7 +6,7 @@ const body_parser = require("body-parser");
 
 server.use(body_parser.json());
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 const axios = require('axios');
 // << db setup >>
 const db = require("./db");
